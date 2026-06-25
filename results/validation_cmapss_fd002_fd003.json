@@ -1,0 +1,36 @@
+{
+  "cmapss_fd002": {
+    "imbalance": 5.7,
+    "feasibility_lift": 6.2,
+    "strategies": {
+      "Baseline": {
+        "precision": 0.878,
+        "recall": 0.822,
+        "f1": 0.849
+      },
+      "SMOTE": {
+        "precision": 0.802,
+        "recall": 0.892,
+        "f1": 0.844
+      }
+    },
+    "ttest_p": 0.0826
+  },
+  "cmapss_fd003": {
+    "imbalance": 7.0,
+    "feasibility_lift": 7.6,
+    "strategies": {
+      "Baseline": {
+        "precision": 0.895,
+        "recall": 0.849,
+        "f1": 0.871
+      },
+      "SMOTE": {
+        "precision": 0.82,
+        "recall": 0.91,
+        "f1": 0.862
+      }
+    },
+    "ttest_p": 0.1685
+  }
+}

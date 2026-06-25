@@ -1,0 +1,17 @@
+{
+  "CNC Machine": {
+    "pr_auc": 0.811,
+    "random_baseline": 0.034,
+    "lift": 23.8
+  },
+  "Irrigation": {
+    "pr_auc": 0.993,
+    "random_baseline": 0.635,
+    "lift": 1.6
+  },
+  "EV Charging": {
+    "accuracy": 0.338,
+    "random_baseline": 0.333,
+    "lift": 1.01
+  }
+}

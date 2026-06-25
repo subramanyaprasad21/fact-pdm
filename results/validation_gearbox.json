@@ -1,0 +1,18 @@
+{
+  "gearbox": {
+    "imbalance": 1.01,
+    "feasibility_lift": 2.0,
+    "strategies": {
+      "Baseline": {
+        "precision": 0.985,
+        "recall": 0.98,
+        "f1": 0.983
+      },
+      "SMOTE": {
+        "precision": 0.985,
+        "recall": 0.98,
+        "f1": 0.983
+      }
+    }
+  }
+}

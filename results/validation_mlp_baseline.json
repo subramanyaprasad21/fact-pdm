@@ -1,0 +1,22 @@
+{
+  "cnc_mlp_base": {
+    "precision": 0.81,
+    "recall": 0.658,
+    "f1": 0.723
+  },
+  "cnc_mlp_smote": {
+    "precision": 0.514,
+    "recall": 0.746,
+    "f1": 0.607
+  },
+  "secom_mlp_base": {
+    "precision": 0.207,
+    "recall": 0.096,
+    "f1": 0.128
+  },
+  "secom_mlp_smote": {
+    "precision": 0.128,
+    "recall": 0.134,
+    "f1": 0.131
+  }
+}

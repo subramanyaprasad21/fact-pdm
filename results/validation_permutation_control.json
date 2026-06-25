@@ -1,0 +1,15 @@
+{
+  "CNC": {
+    "true_lift": 23.3,
+    "permuted_lift_mean": 1.07,
+    "permuted_runs": [
+      1.24,
+      0.9,
+      1.06
+    ]
+  },
+  "GasTurbine": {
+    "true_lift": 6.4,
+    "permuted_lift_mean": 0.99
+  }
+}

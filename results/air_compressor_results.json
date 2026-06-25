@@ -1,0 +1,15 @@
+{
+  "MetroPT3 Air Compressor": {
+    "samples_analysed": 101129,
+    "features": 7,
+    "task": "anomaly detection",
+    "method": "Isolation Forest (unsupervised)",
+    "anomaly_rate": 0.05,
+    "note": "No labelled failures; unsupervised detection. Top anomaly-driving sensors identified.",
+    "top_anomaly_sensors": [
+      "DV_pressure",
+      "H1",
+      "TP2"
+    ]
+  }
+}

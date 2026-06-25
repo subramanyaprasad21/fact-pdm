@@ -1,0 +1,19 @@
+{
+  "pump": {
+    "imbalance": 10,
+    "feasibility_lift": 11.0,
+    "strategies": {
+      "Baseline": {
+        "precision": 0.998,
+        "recall": 0.997,
+        "f1": 0.997
+      },
+      "SMOTE": {
+        "precision": 0.996,
+        "recall": 0.998,
+        "f1": 0.997
+      }
+    },
+    "ttest_p": 0.8606
+  }
+}

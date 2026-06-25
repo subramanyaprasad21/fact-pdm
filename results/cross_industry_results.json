@@ -1,0 +1,132 @@
+{
+  "CNC Machine": {
+    "samples": 10000,
+    "features": 6,
+    "classes": 2,
+    "imbalance_ratio": 28.5,
+    "results": {
+      "Baseline": {
+        "precision": "0.877 \u00b1 0.037",
+        "recall": "0.578 \u00b1 0.063",
+        "f1": "0.694 \u00b1 0.046"
+      },
+      "ClassWeights": {
+        "precision": "0.906 \u00b1 0.055",
+        "recall": "0.511 \u00b1 0.050",
+        "f1": "0.651 \u00b1 0.038"
+      },
+      "SMOTE": {
+        "precision": "0.452 \u00b1 0.059",
+        "recall": "0.752 \u00b1 0.068",
+        "f1": "0.564 \u00b1 0.058"
+      },
+      "Undersample": {
+        "precision": "0.230 \u00b1 0.022",
+        "recall": "0.935 \u00b1 0.015",
+        "f1": "0.369 \u00b1 0.029"
+      }
+    }
+  },
+  "Irrigation": {
+    "samples": 2000,
+    "features": 23,
+    "classes": 2,
+    "imbalance_ratio": 1.7,
+    "results": {
+      "Baseline": {
+        "precision": "0.943 \u00b1 0.014",
+        "recall": "0.965 \u00b1 0.015",
+        "f1": "0.954 \u00b1 0.006"
+      },
+      "ClassWeights": {
+        "precision": "0.939 \u00b1 0.016",
+        "recall": "0.972 \u00b1 0.012",
+        "f1": "0.955 \u00b1 0.008"
+      },
+      "SMOTE": {
+        "precision": "0.945 \u00b1 0.014",
+        "recall": "0.965 \u00b1 0.016",
+        "f1": "0.954 \u00b1 0.006"
+      },
+      "Undersample": {
+        "precision": "0.975 \u00b1 0.010",
+        "recall": "0.928 \u00b1 0.016",
+        "f1": "0.951 \u00b1 0.006"
+      }
+    }
+  },
+  "EV Charging": {
+    "samples": 5000,
+    "features": 10,
+    "classes": 3,
+    "imbalance_ratio": 1.0,
+    "results": {
+      "Baseline": {
+        "precision": "0.329 \u00b1 0.014",
+        "recall": "0.329 \u00b1 0.014",
+        "f1": "0.329 \u00b1 0.014"
+      },
+      "ClassWeights": {
+        "precision": "0.342 \u00b1 0.010",
+        "recall": "0.342 \u00b1 0.010",
+        "f1": "0.342 \u00b1 0.010"
+      },
+      "SMOTE": {
+        "precision": "0.337 \u00b1 0.013",
+        "recall": "0.337 \u00b1 0.014",
+        "f1": "0.336 \u00b1 0.014"
+      },
+      "Undersample": {
+        "precision": "0.331 \u00b1 0.007",
+        "recall": "0.331 \u00b1 0.006",
+        "f1": "0.331 \u00b1 0.007"
+      }
+    }
+  },
+  "Azure (Industrial Equipment)": {
+    "samples": 175220,
+    "features": 18,
+    "classes": 2,
+    "imbalance_ratio": 48.0,
+    "results": {
+      "Baseline": {
+        "precision": "0.667",
+        "recall": "0.003",
+        "f1": "0.006"
+      },
+      "SMOTE": {
+        "precision": "0.157",
+        "recall": "0.370",
+        "f1": "0.220"
+      }
+    },
+    "note": "single split; demonstrates accuracy trap"
+  },
+  "Marine Gas Turbine": {
+    "samples": 11934,
+    "features": 16,
+    "task": "regression",
+    "target": "GT turbine decay coefficient",
+    "r2_mean": 0.9916,
+    "r2_std": 0.0013,
+    "mae_mean": 0.00033,
+    "top_features": [
+      "GT Compressor outlet air pressure (P2) [bar]",
+      "Gas Generator rate of revolutions (GGn) [rpm]",
+      "Gas Turbine (GT) shaft torque (GTT) [kN m]"
+    ]
+  },
+  "MetroPT3 Air Compressor": {
+    "samples_analysed": 101129,
+    "features": 7,
+    "task": "anomaly detection",
+    "method": "Isolation Forest (unsupervised)",
+    "anomaly_rate": 0.05,
+    "note": "No labelled failures; unsupervised detection. Top anomaly-driving sensors identified.",
+    "top_anomaly_sensors": [
+      "DV_pressure",
+      "H1",
+      "TP2"
+    ]
+  }
+}

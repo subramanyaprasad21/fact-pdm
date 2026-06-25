@@ -1,0 +1,29 @@
+{
+  "name": "FACT: Feasibility-Aware Cost-Tuned framework for Predictive Maintenance",
+  "stages": [
+    {
+      "stage": 1,
+      "name": "Feasibility Screening",
+      "question": "Can this data support predictive maintenance at all?",
+      "method": "Compute PR-AUC lift over random baseline",
+      "decision_rule": "Lift > 2x: proceed. Lift 1.2-2x: proceed with caution. Lift < 1.2x: STOP, fix data collection",
+      "evidence": "EV Charging (1.01x) flagged as infeasible; CNC (23.8x) and Irrigation (1.6x) cleared"
+    },
+    {
+      "stage": 2,
+      "name": "Imbalance Assessment",
+      "question": "Is reported accuracy hiding poor failure detection?",
+      "method": "Check imbalance ratio and report recall, not just accuracy",
+      "decision_rule": "Ratio >40:1: resampling essential. 10-40:1: compare strategies, threshold tuning often best. <5:1: minimal intervention",
+      "evidence": "Azure (48:1) accuracy 0.98 but recall 0.003 without intervention"
+    },
+    {
+      "stage": 3,
+      "name": "Cost-Tuned Deployment",
+      "question": "What decision threshold matches business priorities?",
+      "method": "Set threshold by cost ratio of missed failure to false alarm",
+      "decision_rule": "Cost ratio 1:1 -> threshold 0.5. 10:1 -> 0.15. 50:1+ -> 0.05",
+      "evidence": "Threshold tuning matched SMOTE recall (0.78) with higher F1 (0.74 vs 0.56)"
+    }
+  ]
+}

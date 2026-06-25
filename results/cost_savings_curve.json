@@ -1,0 +1,44 @@
+{
+  "1:1": {
+    "opt_threshold": 0.4,
+    "cost_opt": 156,
+    "cost_default": 170,
+    "pct_saving": 8.2
+  },
+  "2:1": {
+    "opt_threshold": 0.3,
+    "cost_opt": 259,
+    "cost_default": 310,
+    "pct_saving": 16.5
+  },
+  "5:1": {
+    "opt_threshold": 0.24,
+    "cost_opt": 483,
+    "cost_default": 730,
+    "pct_saving": 33.8
+  },
+  "10:1": {
+    "opt_threshold": 0.18,
+    "cost_opt": 775,
+    "cost_default": 1430,
+    "pct_saving": 45.8
+  },
+  "20:1": {
+    "opt_threshold": 0.12,
+    "cost_opt": 1235,
+    "cost_default": 2830,
+    "pct_saving": 56.4
+  },
+  "50:1": {
+    "opt_threshold": 0.02,
+    "cost_opt": 2235,
+    "cost_default": 7030,
+    "pct_saving": 68.2
+  },
+  "100:1": {
+    "opt_threshold": 0.02,
+    "cost_opt": 3135,
+    "cost_default": 14030,
+    "pct_saving": 77.7
+  }
+}

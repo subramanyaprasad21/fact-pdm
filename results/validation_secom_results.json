@@ -1,0 +1,20 @@
+{
+  "secom": {
+    "imbalance": 14.1,
+    "feasibility_lift": 2.12,
+    "pr_auc": 0.141,
+    "strategies": {
+      "Baseline": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "SMOTE": {
+        "precision": 0.1,
+        "recall": 0.01,
+        "f1": 0.018
+      }
+    },
+    "ttest_p": 0.3739
+  }
+}
